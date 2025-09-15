@@ -41,6 +41,8 @@ Start pressing keys on your keyboard.
 Watch your stress be recorded in fun ways.
 
 
+DEMO - https://keyboard-stress.vercel.app/
+
 🤝 Contributing
 
 Feel free to fork this repo and submit pull requests with creative ideas
