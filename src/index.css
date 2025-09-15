@@ -1,0 +1,55 @@
+/* keyboard container */
+.keyboard {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 16px;
+  border-radius: 12px;
+  background: linear-gradient(145deg,#0f172a,#1e293b);
+  user-select: none;
+}
+
+/* each row */
+.keyboard-row {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+/* base key */
+.key-component {
+  background: linear-gradient(145deg,#1e1e2e,#2d2d44);
+  color: #f8fafc;
+  border: 1px solid #3b3b5c;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 12px 16px;
+  min-width: 48px;
+  height: 54px;
+  cursor: pointer;
+  transition: transform .12s ease, box-shadow .12s ease;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.7), inset 0 1px 2px rgba(255,255,255,0.03);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* sizes */
+.key--normal { min-width: 48px; }
+.key--med { min-width: 110px; }
+.key--wide { min-width: 90px; }
+.key--space { min-width: 220px; }
+
+/* special look */
+.key--special {
+  background: linear-gradient(145deg,#2563eb,#1d4ed8);
+  color: #f1f5f9;
+  font-weight: 700;
+}
+
+/* pressed / active */
+.key--pressed {
+  transform: translateY(2px);
+  box-shadow: inset 0 2px 6px rgba(0,0,0,0.6);
+}

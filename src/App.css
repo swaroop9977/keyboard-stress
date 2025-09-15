@@ -1,0 +1,91 @@
+/* Global styles */
+:root {
+  --bg-dark: #0b1220;
+  --bg-panel: #121c33;
+  --accent: #4fd1c5;
+  --accent2: #63b3ed;
+  --text-light: #e6eef8;
+  --text-muted: #9fb4d6;
+  --danger: #f56565;
+  --success: #48bb78;
+}
+
+body {
+  margin: 0;
+  font-family: "Fira Code", "Consolas", monospace;
+  background: var(--bg-dark);
+  color: var(--text-light);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* Logo flair */
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter, transform;
+  transition: filter 300ms, transform 200ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 1em var(--accent));
+  transform: scale(1.05);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 1em var(--accent2));
+}
+
+/* Panels & cards */
+.card {
+  background: var(--bg-panel);
+  padding: 1.5em 2em;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+  margin: 1rem auto;
+  max-width: 800px;
+  transition: transform 200ms ease;
+}
+.card:hover {
+  transform: translateY(-2px);
+}
+
+/* Buttons */
+button {
+  background: var(--accent);
+  border: none;
+  color: #fff;
+  font-weight: bold;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 200ms, transform 100ms;
+}
+button:hover {
+  background: var(--accent2);
+  transform: scale(1.05);
+}
+button:active {
+  transform: scale(0.95);
+}
+
+/* Inputs */
+select {
+  background: var(--bg-panel);
+  color: var(--text-light);
+  border: 1px solid var(--accent2);
+  border-radius: 6px;
+  padding: 6px 10px;
+}
+
+/* Utility */
+.read-the-docs {
+  color: var(--text-muted);
+}
